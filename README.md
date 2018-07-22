@@ -23,3 +23,7 @@ Since the application does not access the game's memory to obtain data about the
 It uses the game's textbox to perform actions, mouse button presses to begin crafts and takes screenshots to detect a craft's quality.
 
 Therefore, it also requires some configuration before it can be used. Fortunately, the configuration process only needs to be done once if the crafting log / crafting progress windows are not moved after the fact.
+
+## Purchase
+You can purchase the application for 2.99€. Any bugfixes before the next major version will be distributed for free via email.
+<a href="http://atbcrafter.fetchapp.com/sell/dc75daf1"><img src="http://www.paypal.com/en_US/i/btn/btn_buynow_LG.gif" alt="" /></a>
