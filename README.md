@@ -21,6 +21,7 @@ The Automatic TextBox Crafter (ATBCrafter) is a FFXIV crafting utility that does
   - Pauses the execution when the application is focused, allowing to stop the current craft more easily.
   - When using Microsoft Windows, execution can be paused if FFXIV is not the focused application.
 - **Load, Edit and Save crafting macros on the application.**
+- **Highlights the action queued to be executed during crafting.**
 
 ## Cons
 Since the application does not access the game's memory to obtain data about the craft, the application **requires the game to be focused** to work.
