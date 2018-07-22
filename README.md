@@ -5,6 +5,7 @@ The Automatic TextBox Crafter (ATBCrafter) is a FFXIV crafting utility that does
 - **Does not access the game's memory in any way.**
   - Only simulates key / mouse button presses and takes screenshots.
 - **Detects quality during the crafting process.**
+  - This allows for macros to use different actions based on quality, such as switching actions around to prevent a poor quality on the Byregot's Blessing / Brow / Miracle.
 - **Automatically detects when the next action is ready to be used.**
   - Makes crafting faster when compared to using in-game macros.
   - Prevents lag spikes from messing up the craft.
