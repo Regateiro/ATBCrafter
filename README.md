@@ -35,4 +35,5 @@ Under Construction...
 
 ## Purchase
 You can purchase the application for 2.99€. A download link will be sent via email automatically upon payment by FetchApp. Any bugfixes before the next major version will also be distributed for free via email.
+
 <a href="http://atbcrafter.fetchapp.com/sell/dc75daf1"><img src="http://www.paypal.com/en_US/i/btn/btn_buynow_LG.gif" alt="" /></a>
