@@ -17,7 +17,7 @@ The Automatic TextBox Crafter (ATBCrafter) is a FFXIV crafting utility that does
   - Tries to upgrade Hasty Touches that land on good / excellent qualities, so more Precise Touches can be used if the action is available for the best HQ chance possible.
   - Actions can be tagged with the "-trick" option, so if quality is good or excellent Tricks of the Trade is used before the action.
   - The CP obtained through Tricks of the Trade is automatically used to upgrade Hasty Touches.
-- **Can pause, stop immediatly and stop executing after the current craft**
+- **Can pause, stop immediatly and stop executing after the current craft.**
   - Pauses the execution when the application is focused, allowing to stop the current craft more easily.
   - When using Microsoft Windows, execution can be paused if FFXIV is not the focused application.
 - **Load, Edit and Save crafting macros on the application.**
