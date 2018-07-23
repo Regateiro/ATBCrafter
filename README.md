@@ -1,5 +1,5 @@
 # ATBCrafter
-The Automatic TextBox Crafter (ATBCrafter) is a FFXIV crafting utility that does not access the game's memory and that can branch crafting actions based on quality.
+The Automatic TextBox Crafter (ATBCrafter) is a FFXIV crafting utility that does not access the game's memory / process in any way and that can branch crafting actions based on quality.
 
 ## Features
 - **Does not access the game's memory in any way.**
