@@ -5,19 +5,19 @@ The Automatic TextBox Crafter (ATBCrafter) is a FFXIV crafting utility that does
 - **Does not access the game's memory in any way.**
   - Only simulates key / mouse button presses and takes screenshots.
 - **Detects quality during the crafting process.**
-  - This allows for macros to use different actions based on quality, such as switching actions around to prevent a poor quality on the `Byregot's Blessing / Brow / Miracle`.
+  - This allows for macros to use different actions based on quality, such as switching actions around to prevent a poor quality on the _Byregot's Blessing / Brow / Miracle_.
 - **Automatically detects when the next action is ready to be used.**
   - Makes crafting faster when compared to using in-game macros.
   - Prevents lag spikes from messing up the craft.
 - **Can craft the same item many times without human intervention.**
   - The number of times that a macro is to be executed can be defined.
-  - The location of the `Begin Synthesis` button can be defined, which once detected is pressed for the next craft.
-- **Actions can be tagged to have `Tricks of the Trade` used before them if the quality is good or excellent.**
-  - The number of `Tricks of the Trade` used can be limited, so it can be possible to fully automate a `Maker's Mark` rotation.
-- **`Hasty Touches` are upgraded to `Basic / Precise Touches` based on context.**
-  - The amount of spare CP that can be used to perform `Basic / Precise Touches` instead of `Hasty Touches` can be defined in a macro.
-  - Tries to upgrade `Hasty Touches` that land on good / excellent qualities, so more `Precise Touches` can be used if the action is available for the best HQ chance possible.
-  - The CP obtained through `Tricks of the Trade` is automatically used to upgrade `Hasty Touches`.
+  - The location of the _Begin Synthesis_ button can be defined, which once detected is pressed for the next craft.
+- **Actions can be tagged to have _Tricks of the Trade_ used before them if the quality is good or excellent.**
+  - The number of _Tricks of the Trade_ used can be limited, so it can be possible to fully automate a _Maker's Mark_ rotation.
+- **_Hasty Touches_ are upgraded to _Basic / Precise Touches_ based on context.**
+  - The amount of spare CP that can be used to perform _Basic / Precise Touches_ instead of _Hasty Touches_ can be defined in a macro.
+  - Tries to upgrade _Hasty Touches_ that land on good / excellent qualities, so more _Precise Touches_ can be used if the action is available for the best HQ chance possible.
+  - The CP obtained through _Tricks of the Trade_ is automatically used to upgrade _Hasty Touches_.
 - **Can pause, stop immediately and stop executing after the current craft.**
   - Pauses the execution when the application is focused, allowing to stop the current craft more easily.
   - When using Microsoft Windows, execution can be paused if FFXIV is not the focused application.
