@@ -143,10 +143,10 @@ To illustrate some of the commands shown above, the following macro will be used
 14. `/ac "Hasty Touch"`
 15. `/ifquality excellent`
 16. `/else`
-17. `/ac "Great Strides"`
-18. `/ifquality normal`
-19. `/ac "Innovation"`
-20. `/endif`
+17. <code> </code><code> </code>`/ac "Great Strides"`
+18. <code> </code><code> </code>`/ifquality normal`
+19. <code> </code><code> </code><code> </code><code> </code>`/ac "Innovation"`
+20. <code> </code><code> </code>`/endif`
 21. `/endif`
 22. `/ac "Byregot's Blessing"`
 23. `/ac "Careful Synthesis II"`
@@ -166,7 +166,7 @@ Lines 12 and 13 execute a couple more crafting buffs (Manipulation and Steady Ha
 
 Line 15 checks for the crafting quality. If it is excellent at this point, then nothing is done and the execution jumps directly to line 22 after the corresponding '/endif' on line 21, executing the "Byregot's Blessing" with the excellent crafting quality, followed by the "Careful Synthesis II" on lines 23 and 24.
 
-However, if the quality is not excellent then the execution continues after the '/else' command on line 16. Line 17 executes the "Great Strides" buff and line 18 checks for the crafting quality again. If the quality is normal, then line 19 is executed performing the "Innovation" buff action and the execution branches are then closed. If the quality is not normal, then it has to be good or excellent, so line 19 is skipped and the execution proceeds to lines 22, 23 and 24 after the execution branches are closed. 
+However, if the quality is not excellent then the execution continues after the '/else' command on line 16. Line 17 executes the "Great Strides" buff and line 18 checks for the crafting quality again. If the quality is normal, then line 19 is executed performing the "Innovation" buff action and the execution branches are then closed. If the quality is not normal, then it has to be good or excellent, so line 19 is skipped and the execution proceeds to lines 22, 23 and 24 after the execution branches are closed. Identation was added to the macro to make it clearer which actions are inside which branching execution path.
 
 The application then returns to the start of the macro to restart the process if necessary.
 
