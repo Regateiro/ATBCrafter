@@ -34,6 +34,9 @@ It uses the game's textbox to perform actions, mouse button presses to begin cra
 
 Therefore, it also requires some configuration before it can be used. Fortunately, the configuration process only needs to be done once if the crafting log / crafting progress windows are not moved after the fact.
 
+## Application Tour
+Under Construction...
+
 ## Configuration Process
 Under Construction...
 
