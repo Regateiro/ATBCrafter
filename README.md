@@ -124,7 +124,7 @@ Should only be used between the '/ifquality' and '/endif' commands.
 ## Macro Example
 To illustrate some of the commands shown above, the following macro will be used:
 
-1. `/spareCP 21`
+1. `/spareCP 28`
 2. `/craft`
 3. `/ac "Comfort Zone"`
 4. `/ac "Inner Quiet" -trick`
@@ -151,7 +151,7 @@ To illustrate some of the commands shown above, the following macro will be used
 
 This macro is mostly useful before the "Prudent Touch" action is learned and the crafter has access to a relatively low amount of CP (~300).
 
-First, line 1 configures the application with the amount of spare CP that this rotation allows for given the current max amount of CP that the crafter has. The amount of spare CP can be checked after manually executing the rotation once or by using an online crafting simulator. The amount of spare CP configured (21) allows for one Hasty Touch upgrade, since an upgrade always costs 18 CP.
+First, line 1 configures the application with the amount of spare CP that this rotation allows for given the current max amount of CP that the crafter has. The amount of spare CP can be checked after manually executing the rotation once or by using an online crafting simulator. The amount of spare CP configured (28) allows for one Hasty Touch upgrade, since an upgrade always costs 18 CP.
 
 Line 2 tells the application to start the craft by hitting the "Begin Synthesis" button.
 
