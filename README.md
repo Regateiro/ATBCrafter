@@ -82,14 +82,14 @@ The "Hasty Touch" action is replaced by a "Basic Touch" if crafting condition is
 
 Executes "Tricks of the Trade" before if condition is good or excellent and adds 20 CP to the amount of spare CP.
 
-If an N limit to the number of tricks is added (e.g. -trick:3), then the "Tricks of the Trade" action is not executed if there have been N previous executions. This is mostly useful for Maker's Mark rotations.
+If an N limit to the number of tricks is added (e.g. -trick:3), then the "Tricks of the Trade" action is not executed if there have been N previous executions. This is mostly useful for "Maker's Mark" rotations.
 
 ### "Maker's Mark" rotation handling (beta feature).
 `Usage:` /flawless \<N\> \<T\>
 
 `Example:` /flawless 12 1
 
-Executes up to N "Flawless Synthesis" in succession, replacing up to T of them by "Tricks of the Trade".
+Executes up to N "Flawless Synthesis" in succession, replacing up to T of them by "Tricks of the Trade". Note that the number of "Tricks of the Trade" executed prior to this command ARE taken into account towards the maximum number T, since the very first action has to be "Maker's Mark" and they will eat into the number of free "Flawless Synthesis".
 
 If the "Maker's Mark" rotation can change the number of overall synthesis actions to finish a craft, it is recommended to not use this feature yet as the application may currently block waiting during execution.
 
