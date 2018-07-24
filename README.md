@@ -13,11 +13,13 @@ The application is available for 2.99€ through PayPal. Download links are made
 - **Automatically detects when the next action is ready to be used.**
   - Makes crafting faster when compared to using in-game macros.
   - Prevents lag spikes from messing up the craft.
+- **Handles "Maker's Mark" rotations.**
+  - The number of necessary "Flawless Synthesis" can be defined and are executed in succession.
+  - "Flawless Synthesis" actions can be replaced by "Tricks of the Trade" up to a defined maximum number.
 - **Can craft the same item many times without human intervention.**
   - The number of times that a macro is to be executed can be defined.
   - The location of the "Begin Synthesis" button can be defined, which once detected is pressed for the next craft.
 - **Actions can be tagged to have "Tricks of the Trade" used before them if the quality is good or excellent.**
-  - The number of "Tricks of the Trade" used can be limited, so it can be possible to fully automate a "Maker's Mark" rotation.
 - **"Hasty Touches" are upgraded to "Basic / Precise Touches" based on context.**
   - The amount of spare CP that can be used to perform "Basic / Precise Touches" instead of "Hasty Touches" can be defined in a macro.
   - Tries to upgrade "Hasty Touches" that land on good / excellent qualities, so more "Precise Touches" can be used if the action is available for the best HQ chance possible.
@@ -75,12 +77,16 @@ The specified action is copied and pasted into the FFXIV chatbox as a command to
 
 The "Hasty Touch" action is replaced by a "Basic Touch" if crafting condition is good or excellent, or if the remaining number of "Hasty Touch" actions can all be upgraded with the amount of spare CP available. If the "Precise Touch" action is available, it is used instead if the condition is good or excellent.
 
-`Additional option:` -trick\[:N\]
+`Additional option:` -trick
 
 Executes "Tricks of the Trade" before if condition is good or excellent and adds 20 CP to the amount of spare CP.
 
-If an N limit to the number of tricks is added (e.g. -trick:3), then the "Tricks of the Trade" action is not executed if there have been N previous executions. This is mostly useful for Maker's Mark rotations.
+### "Maker's Mark" rotation handling.
+`Usage:` /flawless \<N\> \<T\>
 
+`Example:` /flawless 12 1
+
+Executes up to N "Flawless Synthesis" in succession, replacing up to T of them by "Tricks of the Trade".
 
 ### Begin a craft.
 `Usage:` /craft
