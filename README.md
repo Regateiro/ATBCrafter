@@ -35,9 +35,9 @@ The application is available for 2.99€ through PayPal. Download links are made
 
 ## Cons
 Since the application does not access the game's memory to obtain data about the craft, the application **requires the game to be focused** to work.
-It uses the game's textbox to perform actions, mouse button presses to begin crafts and takes screenshots to detect a craft's quality.
+It uses the game's textbox to perform actions, mouse button presses to begin crafts and takes screenshots to detect a craft's quality. Because of this, **this application only supports the PC version of FFXIV**.
 
-Therefore, it also requires some configuration before it can be used. Fortunately, the configuration process only needs to be done once if the crafting log / crafting progress windows are not moved after the fact.
+Additionally, it also requires some configuration before it can be used. Fortunately, the configuration process only needs to be done once if the crafting log / crafting progress windows are not moved after the fact.
 
 ## Screenshots
 
