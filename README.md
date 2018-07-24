@@ -8,6 +8,8 @@ The application is available for 2.99€ through PayPal. Download links are made
 ## Features
 - **Does not access the game's memory in any way.**
   - Only simulates key / mouse button presses and takes screenshots.
+- **Simple to use!**
+  - You can just copy-paste your macros after configuring a few simple things and it should work. However, many advanced features allows you to craft multiple items without having to start each craft manually and to avoid poor qualities on your "Byregot's Blessing"!
 - **Detects quality during the crafting process.**
   - This allows for macros to use different actions based on quality, such as switching actions around to prevent a poor quality on the "Byregot's Blessing / Brow / Miracle".
 - **Automatically detects when the next action is ready to be used.**
