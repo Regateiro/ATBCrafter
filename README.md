@@ -46,6 +46,8 @@ The main screen shown below is divided into several sections: the menu bar, the 
 
 <img src=main.png />
 
+The area number 5 shows the control where the number of crafts to execute using the macro shown on area 7. While executing, each time the macro is completed this number is decremented, so it can be used to see how many crafts are left to complete the batch. The progress bar on area number 6 displays visually the batch progress. Once full, the batch execution is finished. 
+
 The menu bar contains four different menus:
 
 1. The macro menu, where macros can be opened and saved. It is also possible to close the application from here.
