@@ -91,7 +91,7 @@ If an N limit to the number of tricks is added (e.g. -trick:3), then the "Tricks
 
 Executes up to N "Flawless Synthesis" in succession, replacing up to T of them by "Tricks of the Trade". Note that the number of "Tricks of the Trade" executed prior to this command ARE taken into account towards the maximum number T, since the very first action has to be "Maker's Mark" and they will eat into the number of free "Flawless Synthesis".
 
-If the "Maker's Mark" rotation can change the number of overall synthesis actions to finish a craft, it is recommended to not use this feature yet as the application may currently block waiting during execution.
+**_If the "Maker's Mark" rotation can change the number of overall synthesis actions to finish a craft, it is recommended to not use this feature yet as the application may currently block waiting during execution._**
 
 ### Begin a craft.
 `Usage:` /craft
