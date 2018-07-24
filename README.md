@@ -37,8 +37,36 @@ It uses the game's textbox to perform actions, mouse button presses to begin cra
 
 Therefore, it also requires some configuration before it can be used. Fortunately, the configuration process only needs to be done once if the crafting log / crafting progress windows are not moved after the fact.
 
-## Application Tour
-Under Construction...
+## Screenshots
+
+### Main screen
+The main screen shown below is divided into several sections: the menu bar, the loop controls and the macro editing and display area. 
+
+<img src=main.png />
+
+The menu bar contains four different menus:
+
+1. The macro menu, where macros can be opened and saved. It is also possible to close the application from here.
+
+<img src=macro.png />
+
+2. The execute menu, where the execution of the current opened macro can be started and stopped.
+
+<img src=execute.png />
+
+3. The options menu, where the application can be configured and several settings set, such as whether the "Precise Touch" can be used for "Hasty Touch" upgrades, if the application should be always on top and so on. It is also possible to open a small display window that displays the current mouse position.
+
+<img src=options.png />
+
+The configuration screen also shows the current mouse position at the bottom for convenience, the current setting for the location of the begin synthesis button, the location of an action that can be always used (such as "Basic Synthesis") to check when it is possible to use an action and the location of the top left and bottom right corners of the box area that encloses the crafting quality condition. These values can be obtained using the current mouse position at the bottom.
+
+The quality condition box is used to capture and compare the quality condition with the pictures shown below these settings. If no picture is shown then the application still needs to be configured for that.
+
+<img src=configuration.png />
+
+4. The help menu, which can display a window with the available macro commands and a window with the current application version. 
+
+<img src=help.png />
 
 ## Configuration Process
 Under Construction...
