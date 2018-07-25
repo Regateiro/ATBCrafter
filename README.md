@@ -73,7 +73,51 @@ The quality condition box is used to capture and compare the quality condition w
 <img src=help.png />
 
 ## Configuration Process
-Under Construction...
+The configuration process is fairly straightforward. The image below shows the configuration window, accessed via the menu Options -> Configuration.
+
+<img src=config_1.png />
+
+First, set the application to be always on top and then open the crafting log in FFXIV. To configure the "Begin Synthesis button position", place your mouse over the Synthesize button ingame. Then, check the current mouse position in the application as shown. Take note of that position and copy the values into the respective fields.
+
+Next, the "Action ready position" is configured in a very similar manner, as shown below.
+
+<img src=config_2.png />
+
+Locate an action in your hotbar that is always available to be used regardless of context (e.g. quality condition, current CP, etc.) such as "Basic Synthesis" or "Careful Synthesis". Place your mouse over the action and take note of the mouse position on the application. Copy the values into the respective fields.
+
+Finally, the "Synthesis quality text area" needs to be configured. Since this requires an area of the screen, two positions are needed (the upper left corner and the lower right corner of the area). The image below illustrates the two positions needed.
+
+<img src=config_3.png />
+
+First, place your mouse somewhere around the upper left corner of the area where the quality condition text appears (doesn't have to be precise, but **make sure that the mouse is within the crafting progress window**). Once again, take note of the mouse position as shown in the application and copy it to the first two fields as illustrated below.
+
+<img src=config_4.png />
+
+Then, place your mouse somewhere around the lower right corner of the area where the quality condition text appears (once again, it doesn't have to be precise, but **make sure that the mouse is within the crafting progress window**). Take note once more of the mouse position as shown in the application and copy it to the final two fields as illustrated below.
+
+<img src=config_5.png />
+
+This concludes the configuration of the mouse positions for starting crafts, checking when actions can be used and for extracting the quality condition while crafting. All that there is left to do is to save the quality condition images that will match the configured area, so the application known what quality condition each image corresponds to.
+
+To do so, select from the menu bar Options -> Configure Quality Detection as illustrated below. A window will appear that warns you about several things, such as the application needing to be configured as just explained until now, that you know the "Observe" action and that you are ready to craft something ingame. **It is recommended that the craft used for this does not used expensive materials, as the craft is not meant to be completed**.
+
+<img src=config_6.png />
+
+Pressing "Yes" will replace your current macro with one that allows for the quality condition configuration to be executed, as shown below, so be sure you save it first.
+
+Then all that is needed to do is to start the macro execution.
+
+<img src=config_7.png />
+
+At this point, the application will start the craft and spam the "Observe" action over and over. This will continue until all four different quality conditions are detected, so **you might have to stop and restart the execution of this macro a few times if the excellent condition decides to not show up**.
+
+When all four quality conditions are detected, a new window will appear as illustrated below.
+
+<img src=config_8.png />
+
+All that is required to do now is to select the quality condition option that matches the image shown and press "OK". After this is done for all four quality conditions, the application will save the images and the configuration process is completed. You can now use the application.
+
+**_Note that the configuration is saved, so you only have to do this process once. However, if you move the crafting log window, the action used for the "Action ready position" or the crafting progress window, you'll have to reconfigure the respective portion of the application. While the first two cases only requires you to set a different mouse position, moving the crafting progress window not only requires you to configure a new "Synthesis quality text area" corner positions, but also to reconfigure the quality condition images, as the area might be different and the application will fail to match the previous saved ones._**
 
 ## Available Macro Commands
 In this section the available macro commands will be shown. Please configure the application as detailed above prior to using any macro.
