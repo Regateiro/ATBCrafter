@@ -1,9 +1,18 @@
 # ATBCrafter
-The Automatic TextBox Crafter (ATBCrafter) is a FFXIV crafting utility that does not access the game's memory / process in any way and that can branch crafting actions based on quality.
+The Automatic TextBox Crafter (ATBCrafter) is a Java FFXIV crafting utility that does not access the game's memory / process in any way and that can branch crafting actions based on quality.
 
 The application is available for 2.99€ through PayPal. Download links are made available via email by FetchApp after payment.
 
 <a href="http://atbcrafter.fetchapp.com/sell/dc75daf1"><img src="http://www.paypal.com/en_US/i/btn/btn_buynow_LG.gif" alt="" /></a>
+
+## Requirements
+This is a Java application that supports the PC version of FFXIV _only_.
+
+The application should work on any PC (tested with Windows, should work on Mac and Linux for the most part but it is untested) that has Java SE installed. Java can be downloaded from the Oracle's website linked below. 
+
+<a href="http://www.java.com"><img src="http://download.oracle.com/technetwork/java/get-java/getjavasoftware-120x30.png" alt="Get Java Software" border="0" width="120" height="30" /></a>
+
+If you have any issues with the application not being able to save configuration settings, please make move the application to a location such as within your "Documents" folder or the Desktop.
 
 ## Features
 - **Does not access the game's memory in any way.**
