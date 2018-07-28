@@ -21,6 +21,7 @@ If you have any issues with the application not being able to save configuration
 ## Features
 - **Does not access the game's memory in any way.**
   - Only simulates key / mouse button presses and takes screenshots.
+  - Does not break on new patches, nor does it require any kind of memory pointers to work!
 - **Simple to use!**
   - You can just copy-paste your macros after configuring a few simple things and it should work. However, many advanced features allows you to craft multiple items without having to start each craft manually and to avoid poor qualities on your "Byregot's Blessing"!
 - **Detects quality during the crafting process.**
