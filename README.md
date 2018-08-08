@@ -26,6 +26,7 @@ If you have any issues with the application not being able to save configuration
   - You can just copy-paste your macros after configuring a few simple things and it should work. However, many advanced features allows you to craft multiple items without having to start each craft manually and to avoid poor qualities on your "Byregot's Blessing"!
 - **Detects quality during the crafting process.**
   - This allows for macros to use different actions based on quality, such as switching actions around to prevent a poor quality on the "Byregot's Blessing / Brow / Miracle".
+  - Matching can also be done by similarity between images if the exact matching fails for some reason.
 - **Automatically detects when the next action is ready to be used.**
   - Makes crafting faster when compared to using in-game macros.
   - Prevents lag spikes from messing up the craft.
@@ -45,6 +46,8 @@ If you have any issues with the application not being able to save configuration
   - Pauses the execution when the application is focused, allowing to stop the current craft more easily.
   - When using Microsoft Windows, execution can be paused if FFXIV is not the focused application.
 - **Load, Edit and Save crafting macros on the application.**
+  - Macros files can be loaded directly by dragging them into the macro text area.
+- **Undo and redo edits in the macring area using crtl-Z and ctrl-Y.**
 - **Highlights the action queued to be executed during crafting.**
 
 ## Cons
@@ -132,6 +135,8 @@ When all four quality conditions are detected, a new window will appear as illus
 All that is required to do now is to select the quality condition option that matches the image shown and press "OK". After this is done for all four quality conditions, the application will save the images and the configuration process is completed. You can now use the application.
 
 **_Note that the configuration is saved, so you only have to do this process once. However, if you move the crafting log window, the action used for the "Action ready position" or the crafting progress window, you'll have to reconfigure the respective portion of the application. While the first two cases only requires you to set a different mouse position, moving the crafting progress window not only requires you to configure a new "Synthesis quality text area" corner positions, but also to reconfigure the quality condition images, as the area might be different and the application will fail to match the previous saved ones._**
+
+However, the application has been updated to allow small movements in the crafting progress window (under 50 pixels) to be fixed automatically by the application. Just head to the Configuration window and use the new button "Validate Area".
 
 ## Available Macro Commands
 In this section the available macro commands will be shown. Please configure the application as detailed above prior to using any macro.
