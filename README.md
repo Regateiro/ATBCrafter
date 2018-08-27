@@ -11,6 +11,17 @@ If you have already bought the application or obtained the application from some
 
 The current version is version 1.06, released in 2018/08/27.
 
+## Table of Contents
+ - [Requirements](#requirements)
+ - [Features](#features)
+ - [Cons](#cons)
+ - [Screenshots](#screenshots)
+ - [Configuration Process](#configuration-process)
+   - [New Version Configuration](#configuration-of-the-latest-version-106---20180827)
+ - [Available Macro Commands](#available-macro-commands)
+ - [Macro Example](#macro-example)
+ - [Purchase and Updates](#purchase-and-updates)
+
 ## Requirements
 This is a Java application that supports the PC version of FFXIV _only_.
 
