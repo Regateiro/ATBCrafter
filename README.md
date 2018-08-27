@@ -141,7 +141,7 @@ All that is required to do now is to select the quality condition option that ma
 
 **_Note that the configuration is saved, so you only have to do this process once. However, if you move the crafting log window, the action used for the "Action ready position" or the crafting progress window, you'll have to reconfigure the respective portion of the application. While the first two cases only requires you to set a different mouse position, moving the crafting progress window not only requires you to configure a new "Synthesis quality text area" corner positions, but also to reconfigure the quality condition images, as the area might be different and the application will fail to match the previous saved ones._**
 
-However, the application has been updated to allow small movements in the crafting progress window (under 50 pixels) to be fixed automatically by the application. Just head to the Configuration window and use the new button "Validate Area".
+However, the application has been updated to allow small movements in the crafting progress window (under 50 pixels) to be fixed automatically by the application. Just head to the Configuration window and use the new button "Validate Quality Detection Area".
 
 ### Configuration of the Latest Version (1.06 - 2018/08/27)
 Version 1.06 added many new features to the program and a few more configuration settings to the ones displayed in the Configuration Process section.
