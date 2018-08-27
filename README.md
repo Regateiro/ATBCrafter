@@ -143,6 +143,35 @@ All that is required to do now is to select the quality condition option that ma
 
 However, the application has been updated to allow small movements in the crafting progress window (under 50 pixels) to be fixed automatically by the application. Just head to the Configuration window and use the new button "Validate Area".
 
+### Configuration of the Latest Version (1.06 - 2018/08/27)
+Version 1.06 added many new features to the program and a few more configuration settings to the ones displayed in the Configuration Process section.
+
+In terms of features, the program now has an "Actions Localizations" setting in the "Options" menu:
+
+<img src=localizations.png />
+
+Setting the language that the FFXIV client is on will ensure that the correct action names will be used. **However, not all actions in all localizations were tested.** If there is an issue with any actions, please open the config.json file in the program's folder, find the action and correct its spelling if necessary. You can also add new actions if necessary come the next expansion and I'm slow to update the program.
+
+The configuration window was updated to include four new position/areas:
+ - The accept collectable synthesis button position.
+ - The area where the materials for the craft are selected.
+ - The area where the current crafting progress value is shown.
+ - The area where the current crafting quality value is shown.
+ 
+<img src=new_config.png />
+
+The image above shows the new configuration settings. The collect button position is configured the same way the begin synthesis button position is configured, you just need to finish a collectable and find the screen position where the button to accept the collectable appears.
+
+The Progress Value Area and Quality Value Area are configured the using a box similarly to the Quality detection text area. You just have to configure the Progress Value Area (1) and Quality Value Area (2) with the boxes shown below:
+
+<img src=new_values_config.png />
+
+The Material Selection Area is configured by selecting two different button positions: the NQ material button for the first material slot and the HQ material button for the sixth material slot, as shown below:
+
+<img src=mats_config.png />
+
+New actions have also been added and can be found in the next section, the Available Macro Commands.
+
 ## Available Macro Commands
 In this section the available macro commands will be shown. Please configure the application as detailed above prior to using any macro.
 
@@ -168,6 +197,27 @@ Moves the mouse to the specified x and y coordinates on screen and performs a mo
 Sets the amount of spare CP usable to upgrade "Hasty Touches" into "Basic / Precise Touches".
 
 The amount of spare CP is set to 0 by default.
+
+### Using items on a set timer.
+`Usage:` /timedo \<M\> \<x\> \<y\> \<T\>
+
+`Example:` /timedo 29 400 600 3000
+
+Exits the crafting log every M minutes to click on the screen location (x,y), then waits T milliseconds and reopens the crafting log using the default keybind "N". Must be placed before the "/mats" and "/craft" commands. **Make sure you do not use the search craft feature ingame, as it currently does not save the selected craft when exiting and reentering the crafting log!**
+
+### Using items on a set number of crafts.
+`Usage:` /loopdo \<N\> \<x\> \<y\> \<T\>
+
+`Example:` /loopdo 10 400 600 3000
+
+Exits the crafting log every N crafts to click on the screen location (x,y), then waits T milliseconds and reopens the crafting log using the default keybind "N". Must be placed before the "/mats" and "/craft" commands. **Make sure you do not use the search craft feature ingame, as it currently does not save the selected craft when exiting and reentering the crafting log!**
+
+### Setting the HQ materials per craft automatically.
+`Usage:` /mats \<N\> \<M1\> \[\<M2\> \[\<M3\> \[\<M4\> \[\<M5\> \[\<M6\>\]\]\]\]\] 
+
+`Example:` /mats 14 3 0 1
+
+Exits the crafting log every N crafts to reset the materials back to all NQ and then clicks on the HQ button for each material the defined number of times (the first material is clicked M1 times, the second M2 times, etc). Any missing number is defaulted to 0. Must be placed before the "/craft" command. **Make sure you do not use the search craft feature ingame, as it currently does not save the selected craft when exiting and reentering the crafting log!**
 
 ### Performing an ingame action.
 `Usage:` /ac \<action name\>
@@ -200,6 +250,12 @@ Executes up to N "Flawless Synthesis" in succession, replacing up to T of them b
 
 Makes the application click on the Begin Synthesis button as soon as it appears. The button should be visible when the application starts executing.
 
+### Finishing a collectable craft.
+`Usage:` /collect \<time\>
+
+`Example:` /collect 2000
+
+Makes the application click on the configured accept collectable button after <time> has elapsed. Since for now it is necessary to wait a set amount of time, finishing a collectable could fail on a big lag spike. A generous <time> setting is recommended if lag spikes are frequent.
 
 ### Configuring the quality detection.
 `Usage:` /qualityConfig
@@ -215,25 +271,53 @@ Starts an infinite loop of '/ac "Observe"' command executions. Only needs to be 
 
 Checks if crafting quality matches the specified quality and any following commands are only executed if there is a quality match.
 
-Nested crafting quality action branching commands are supported.
+Nested action branching commands are supported.
 
 Requires a prior successful quality configuration.
+
+
+### Failed "Flawless Synthesis" action count branching.
+`Usage:` /ifflawfail \<N\>
+
+`Example:` /ifflawfail 6
+
+Checks if N or more "Flawless Synthesis" failed during a "/flawless" execution and any following commands are only executed if true.
+
+Nested action branching commands are supported.
+
+### "Inner Quiet" stack count branching.
+`Usage:` /ifiq \<N\>
+
+`Example:` /ifiq 6
+
+Checks if "Inner Quiet" is at N or more stacks and any following commands are only executed if true.
+
+Nested action branching commands are supported.
+
+### Amount of spare CP branching.
+`Usage:` /ifspareCP \<N\>
+
+`Example:` /ifspareCP 18
+
+Checks if N or more spare CP exists and any following commands are only executed if true.
+
+Nested action branching commands are supported.
 
 ### Crafting quality action branching ending.
 `Usage:` /endif
 
 `Example:` /endif
 
-Any command following this will be executed, regardless of the previous quality match.
+Any command following this will be executed, regardless of the previous branching command.
 
-### Crafting quality action alternate branching.
+### Alternate branching.
 `Usage:` /else
 
 `Example:` /else
 
-Following commands are only executed if the previous '/ifquality' did not get a quality match.
+Following commands are only executed if the previous branching command did not get a quality match.
 
-Should only be used between the '/ifquality' and '/endif' commands.
+Should only be used between a branching and '/endif' commands.
 
 ## Macro Example
 To illustrate some of the commands shown above, the following macro will be used:
