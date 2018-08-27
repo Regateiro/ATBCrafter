@@ -27,6 +27,8 @@ If you have any issues with the application not being able to save configuration
 - **Detects quality during the crafting process.**
   - This allows for macros to use different actions based on quality, such as switching actions around to prevent a poor quality on the "Byregot's Blessing / Brow / Miracle".
   - Matching can also be done by similarity between images if the exact matching fails for some reason.
+- **Conditional Macro Execution**
+  - Additionally to being able to use different actions depending on the current crafting condition quality, it is now possible to also use different actions based on the current amount of spare CP (to add a possible Innovation, for example), the number of failed Flawless Synthesis actions (for "Maker's Mark" rotations) current amount of Inner Quiet stacks (to use "Reclaim" perhaps, could be more useful in the future).
 - **Automatically detects when the next action is ready to be used.**
   - Makes crafting faster when compared to using in-game macros.
   - Prevents lag spikes from messing up the craft.
@@ -42,6 +44,9 @@ If you have any issues with the application not being able to save configuration
   - The amount of spare CP that can be used to perform "Basic / Precise Touches" instead of "Hasty Touches" can be defined in a macro.
   - Tries to upgrade "Hasty Touches" that land on good / excellent qualities, so more "Precise Touches" can be used if the action is available for the best HQ chance possible.
   - The CP obtained through "Tricks of the Trade" is automatically used to upgrade "Hasty Touches".
+- **Automatic Action Localization**
+  - If the FFXIV client is set to a language other than English, it is possible to have the program automatically translate the actions in the macro to a specific language.
+  - Remember to set the correct localization to avoid issues with "Hasty Touch" upgrades and "Tricks of the Trade" executions.
 - **Can pause, stop immediately and stop executing after the current craft.**
   - Pauses the execution when the application is focused, allowing to stop the current craft more easily.
   - When using Microsoft Windows, execution can be paused if FFXIV is not the focused application.
