@@ -148,7 +148,7 @@ However, the application has been updated to allow small movements in the crafti
 ### Configuration of the Latest Version (1.06 - 2018/08/27)
 Version 1.06 added many new features to the program and a few more configuration settings to the ones displayed in the Configuration Process section.
 
-In terms of features, the program now has an "Actions Localizations" setting in the "Options" menu:
+In terms of features, the program now has an "Actions Localization" setting in the "Options" menu:
 
 <img src=localizations.png />
 
