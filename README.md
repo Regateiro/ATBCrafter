@@ -9,7 +9,7 @@ If you have already bought the application or obtained the application from some
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3PTK9AH56YGPE"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="" /></a>
 
-The current version is version 1.06, released in 2018/08/27.
+The current version is version 1.06b, released in 2018/08/28.
 
 ## Table of Contents
  - [Requirements](#requirements)
