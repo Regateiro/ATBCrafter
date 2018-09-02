@@ -48,6 +48,7 @@ If you have any issues with the application not being able to save configuration
 - **Handles "Maker's Mark" rotations.**
   - The number of necessary "Flawless Synthesis" can be defined and are executed in succession.
   - "Flawless Synthesis" actions can be replaced by "Tricks of the Trade" up to a defined maximum number.
+  - The number of failed "Flawless Synthesis" can be tracked so the macro can change depending on it.
 - **Can craft the same item many times without human intervention.**
   - The number of times that a macro is to be executed can be defined.
   - The location of the "Begin Synthesis" button can be defined, which once detected is pressed for the next craft.
@@ -57,6 +58,8 @@ If you have any issues with the application not being able to save configuration
   - The amount of spare CP that can be used to perform "Basic / Precise Touches" instead of "Hasty Touches" can be defined in a macro.
   - Tries to upgrade "Hasty Touches" that land on good / excellent qualities, so more "Precise Touches" can be used if the action is available for the best HQ chance possible.
   - The CP obtained through "Tricks of the Trade" is automatically used to upgrade "Hasty Touches".
+- **"Byregot's Blessing" can be replaced by a "Byregot's Brow" based on the number of Inner Quiet stacks.**
+  - The application can track the number of Inner Quiet stacks automatically and use "Byregot's Brow" instead of "Byregot's Blessing" if it is 5 or less, resulting in a higher amount of quality gained.
 - **Automatic Action Localization**
   - If the FFXIV client is set to a language other than English, it is possible to have the program automatically translate the actions in the macro to a specific language.
   - Remember to set the correct localization to avoid issues with "Hasty Touch" upgrades and "Tricks of the Trade" executions.
@@ -165,7 +168,9 @@ In terms of features, the program now has an "Actions Localization" setting in t
 
 Setting the language that the FFXIV client is on will ensure that the correct action names will be used. **However, not all actions in all localizations were tested.** If there is an issue with any actions, please open the config.json file in the program's folder, find the action and correct its spelling if necessary. You can also add new actions if necessary come the next expansion and I'm slow to update the program.
 
-The configuration window was updated to include four new position/areas:
+The "Use Byregot's Brow" option was also added, which enables the replacement of any "Byregot's Blessing" action by the "Byregot's Brow" action when the number of current Inner Quiet stacks is at 5 or lower. Keep in mind that the success rate of "Byregot's Brow" is only 70% on non-specialist craft jobs.
+
+The configuration window was also updated to include four new position/areas:
  - The accept collectable synthesis button position.
  - The area where the materials for the craft are selected.
  - The area where the current crafting progress value is shown.
