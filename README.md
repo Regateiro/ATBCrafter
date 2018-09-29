@@ -45,6 +45,8 @@ If you have any issues with the application not being able to save configuration
 - **Automatically detects when the next action is ready to be used.**
   - Makes crafting faster when compared to using in-game macros.
   - Prevents lag spikes from messing up the craft.
+- **Sets cross job actions automatically.**
+  - Prior to executing a macro, the application can detect all cross-job actions used in the macro and set them automatically. Never fail another craft because you forgot to do that!
 - **Handles "Maker's Mark" rotations.**
   - The number of necessary "Flawless Synthesis" can be defined and are executed in succession.
   - "Flawless Synthesis" actions can be replaced by "Tricks of the Trade" up to a defined maximum number.
@@ -66,7 +68,7 @@ If you have any issues with the application not being able to save configuration
 - **Can pause, stop immediately and stop executing after the current craft.**
   - Pauses the execution when the application is focused, allowing to stop the current craft more easily.
   - When using Microsoft Windows, execution can be paused if FFXIV is not the focused application.
-- **Load, Edit and Save crafting macros on the application.**
+- **Create, Load, Edit and Save crafting macros on the application.**
   - Macros files can be loaded directly by dragging them into the macro text area.
 - **Undo and redo edits in the macring area using crtl-Z and ctrl-Y.**
 - **Highlights the action queued to be executed during crafting.**
