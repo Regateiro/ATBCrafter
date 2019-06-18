@@ -11,6 +11,11 @@ If you have already bought the application or obtained the application from some
 
 The current version is version 1.07, released in 2018/09/29.
 
+## Shadowbrigers UI Changes Notice
+Due to the changes to the crafting UI in patch 5.0 for Shadowbringers, the application may have to be reconfigured for some features to work again. However, given that the quality status text indicator (poor/normal/good/excellent) will have a different color, it is unknown whether the current algorithm that detects it will work.
+
+If a new detection method is required, a new version of the program will be released soon after 5.0, alongside the support for autotranslating the new actions.
+
 ## Table of Contents
  - [Requirements](#requirements)
  - [Features](#features)
