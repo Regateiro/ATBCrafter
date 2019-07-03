@@ -9,7 +9,7 @@ If you have already bought the application or obtained the application from some
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3PTK9AH56YGPE"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="" /></a>
 
-The current version is version 1.07, released in 2018/09/29.
+The current version is version 1.10, released in 2019/07/04.
 
 ## Shadowbrigers UI Changes Notice
 Due to the changes to the crafting UI in patch 5.0 for Shadowbringers, the application may have to be reconfigured for some features to work again. However, given that the quality status text indicator (poor/normal/good/excellent) will have a different color, it is unknown whether the current algorithm that detects it will work.
