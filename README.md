@@ -9,7 +9,7 @@ If you have already bought the application or obtained the application from some
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3PTK9AH56YGPE"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="" /></a>
 
-The current version is version 1.10, released in 2019/07/04.
+The current version is version 1.13, released in 2019/10/29. Support for patch 5.1 has been added with this release.
 
 ## Shadowbrigers UI Changes Notice
 Due to the changes to the crafting UI in patch 5.0 for Shadowbringers, the application may have to be reconfigured for some features to work again. However, given that the quality status text indicator (poor/normal/good/excellent) will have a different color, it is unknown whether the current algorithm that detects it will work.
@@ -50,12 +50,6 @@ If you have any issues with the application not being able to save configuration
 - **Automatically detects when the next action is ready to be used.**
   - Makes crafting faster when compared to using in-game macros.
   - Prevents lag spikes from messing up the craft.
-- **Sets cross job actions automatically.**
-  - Prior to executing a macro, the application can detect all cross-job actions used in the macro and set them automatically. Never fail another craft because you forgot to do that!
-- **Handles "Maker's Mark" rotations.**
-  - The number of necessary "Flawless Synthesis" can be defined and are executed in succession.
-  - "Flawless Synthesis" actions can be replaced by "Tricks of the Trade" up to a defined maximum number.
-  - The number of failed "Flawless Synthesis" can be tracked so the macro can change depending on it.
 - **Can craft the same item many times without human intervention.**
   - The number of times that a macro is to be executed can be defined.
   - The location of the "Begin Synthesis" button can be defined, which once detected is pressed for the next craft.
@@ -257,16 +251,7 @@ The "Hasty Touch" action is replaced by a "Basic Touch" if crafting condition is
 
 Executes "Tricks of the Trade" before if condition is good or excellent and adds 20 CP to the amount of spare CP.
 
-If an N limit to the number of tricks is added (e.g. -trick:3), then the "Tricks of the Trade" action is not executed if there have been N previous executions. This is mostly useful for "Maker's Mark" rotations.
-
-### "Maker's Mark" rotation handling (beta feature).
-`Usage:` /flawless \<N\> \<T\>
-
-`Example:` /flawless 12 1
-
-Executes up to N "Flawless Synthesis" in succession, replacing up to T of them by "Tricks of the Trade". Note that the number of "Tricks of the Trade" executed prior to this command ARE taken into account towards the maximum number T, since the very first action has to be "Maker's Mark" and they will eat into the number of free "Flawless Synthesis".
-
-~~If the "Maker's Mark" rotation can change the number of overall synthesis actions to finish a craft, it is recommended to not use this feature yet as the application may currently block waiting during execution.~~ As of the latest version, the application should now automatically detect if a craft finishes before the end of the macro and proceed to the next craft. However, make sure that the craft either finishes or fails after the macro is completed in its entirety.
+If an N limit to the number of tricks is added (e.g. -trick:3), then the "Tricks of the Trade" action is not executed if there have been N previous executions.
 
 ### Begin a craft.
 `Usage:` /craft
@@ -299,16 +284,6 @@ Checks if crafting quality matches the specified quality and any following comma
 Nested action branching commands are supported.
 
 Requires a prior successful quality configuration.
-
-
-### Failed "Flawless Synthesis" action count branching.
-`Usage:` /ifflawfail \<N\>
-
-`Example:` /ifflawfail 6
-
-Checks if N or more "Flawless Synthesis" failed during a "/flawless" execution and any following commands are only executed if true.
-
-Nested action branching commands are supported.
 
 ### "Inner Quiet" stack count branching.
 `Usage:` /ifiq \<N\>
@@ -352,25 +327,23 @@ To illustrate some of the commands shown above, the following macro will be used
 3. `/ac "Comfort Zone"`
 4. `/ac "Inner Quiet" -trick`
 5. `/ac "Waste Not" -trick`
-6. `/ac "Steady Hand II"`
+6. `/ac "Hasty Touch"`
 7. `/ac "Hasty Touch"`
 8. `/ac "Hasty Touch"`
 9. `/ac "Hasty Touch"`
 10. `/ac "Hasty Touch"`
-11. `/ac "Hasty Touch"`
-12. `/ac "Manipulation" -trick`
-13. `/ac "Steady Hand II" -trick`
-14. `/ac "Hasty Touch"`
-15. `/ifquality excellent`
-16. `/else`
-17. <code> </code><code> </code>`/ac "Great Strides"`
-18. <code> </code><code> </code>`/ifquality normal`
-19. <code> </code><code> </code><code> </code><code> </code>`/ac "Innovation"`
-20. <code> </code><code> </code>`/endif`
-21. `/endif`
-22. `/ac "Byregot's Blessing"`
-23. `/ac "Careful Synthesis II"`
-24. `/ac "Careful Synthesis II"`
+11. `/ac "Manipulation" -trick`
+12. `/ac "Hasty Touch"`
+13. `/ifquality excellent`
+14. `/else`
+15. <code> </code><code> </code>`/ac "Great Strides"`
+16. <code> </code><code> </code>`/ifquality normal`
+17. <code> </code><code> </code><code> </code><code> </code>`/ac "Innovation"`
+18. <code> </code><code> </code>`/endif`
+19. `/endif`
+20. `/ac "Byregot's Blessing"`
+21. `/ac "Careful Synthesis II"`
+22. `/ac "Careful Synthesis II"`
 
 This macro is mostly useful before the "Prudent Touch" action is learned and the crafter has access to a relatively low amount of CP (~300).
 
@@ -378,15 +351,15 @@ First, line 1 configures the application with the amount of spare CP that this r
 
 Line 2 tells the application to start the craft by hitting the "Begin Synthesis" button.
 
-Lines 3 to 6 tells the application to use various crafting buffs in order (Comfort Zone, Inner Quiet, Waste Not, Steady Hand II). Lines 4 and 5 have the "-trick" option, stating that "Tricks of the Trade" can be used before these actions if the quality is good or excellent.
+Lines 3 to 5 tells the application to use various crafting buffs in order (Comfort Zone, Inner Quiet, Waste Not). Lines 4 and 5 have the "-trick" option, stating that "Tricks of the Trade" can be used before these actions if the quality is good or excellent.
 
-Lines 7 to 11 are all "Hasty Touch" action executions. If no good or excellent quality occurs at this point, the "Hasty Touch" on line 11 will be upgraded to a "Basic Touch" due to the 21 spare CP (it isn't saved for the "Hasty Touch" on line 14 because there are more "-trick" options on actions before it on lines 12 and 13, which can generate more spare CP). Otherwise, the first "Hasty Touch" that lands on a good or excellent quality will be upgraded. If "Tricks of the Trade" actions were used on lines 4 or 5, then more "Hasty Touch" actions will be upgraded.
+Lines 6 to 10 are all "Hasty Touch" action executions. If no good or excellent quality occurs at this point, the "Hasty Touch" on line 11 will be upgraded to a "Basic Touch" due to the 21 spare CP (it isn't saved for the "Hasty Touch" on line 14 because there are more "-trick" options on actions before it on lines 12 and 13, which can generate more spare CP). Otherwise, the first "Hasty Touch" that lands on a good or excellent quality will be upgraded. If "Tricks of the Trade" actions were used on lines 4 or 5, then more "Hasty Touch" actions will be upgraded.
 
-Lines 12 and 13 execute a couple more crafting buffs (Manipulation and Steady Hand II), which also allows for extra "Tricks of the Trade" to be used. If it is, then the "Hasty Touch" on line 14 is upgraded.
+Lines 11 executes the crafting buff "Manipulation", which also allows for extra "Tricks of the Trade" to be used. If it is, then the "Hasty Touch" on line 12 is upgraded.
 
-Line 15 checks for the crafting quality. If it is excellent at this point, then nothing is done and the execution jumps directly to line 22 after the corresponding '/endif' on line 21, executing the "Byregot's Blessing" with the excellent crafting quality, followed by the "Careful Synthesis II" on lines 23 and 24.
+Line 13 checks for the crafting quality. If it is excellent at this point, then nothing is done and the execution jumps directly to line 20 after the corresponding '/endif' on line 19, executing the "Byregot's Blessing" with the excellent crafting quality, followed by the "Careful Synthesis II" on lines 21 and 22.
 
-However, if the quality is not excellent then the execution continues after the '/else' command on line 16. Line 17 executes the "Great Strides" buff and line 18 checks for the crafting quality again. If the quality is normal, then line 19 is executed performing the "Innovation" buff action and the execution branches are then closed. If the quality is not normal, then it has to be good or excellent, so line 19 is skipped and the execution proceeds to lines 22, 23 and 24 after the execution branches are closed. Identation was added to the macro to make it clearer which actions are inside which branching execution path.
+However, if the quality is not excellent then the execution continues after the '/else' command on line 14. Line 15 executes the "Great Strides" buff and line 16 checks for the crafting quality again. If the quality is normal, then line 17 is executed performing the "Innovation" buff action and the execution branches are then closed. If the quality is not normal, then it has to be good or excellent, so line 17 is skipped and the execution proceeds to lines 20, 21 and 22 after the execution branches are closed. Identation was added to the macro to make it clearer which actions are inside which branching execution path.
 
 The application then returns to the start of the macro to restart the process if necessary.
 
