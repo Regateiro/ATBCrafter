@@ -9,7 +9,7 @@ If you have already bought the application or obtained the application from some
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3PTK9AH56YGPE"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="" /></a>
 
-The current version is version 1.13, released in 2019/10/29. Support for patch 5.1 has been added with this release.
+The current version is version 1.15, released in 2020/08/24. Support for patch 5.3 has been added with this release.
 
 ## Shadowbrigers UI Changes Notice
 Due to the changes to the crafting UI in patch 5.0 for Shadowbringers, the application may have to be reconfigured for some features to work again. However, given that the quality status text indicator (poor/normal/good/excellent) will have a different color, it is unknown whether the current algorithm that detects it will work.
@@ -59,8 +59,6 @@ If you have any issues with the application not being able to save configuration
   - The amount of spare CP that can be used to perform "Basic / Precise Touches" instead of "Hasty Touches" can be defined in a macro.
   - Tries to upgrade "Hasty Touches" that land on good / excellent qualities, so more "Precise Touches" can be used if the action is available for the best HQ chance possible.
   - The CP obtained through "Tricks of the Trade" is automatically used to upgrade "Hasty Touches".
-- **"Byregot's Blessing" can be replaced by a "Byregot's Brow" based on the number of Inner Quiet stacks.**
-  - The application can track the number of Inner Quiet stacks automatically and use "Byregot's Brow" instead of "Byregot's Blessing" if it is 5 or less, resulting in a higher amount of quality gained.
 - **Automatic Action Localization**
   - If the FFXIV client is set to a language other than English, it is possible to have the program automatically translate the actions in the macro to a specific language.
   - Remember to set the correct localization to avoid issues with "Hasty Touch" upgrades and "Tricks of the Trade" executions.
@@ -69,6 +67,7 @@ If you have any issues with the application not being able to save configuration
   - When using Microsoft Windows, execution can be paused if FFXIV is not the focused application.
 - **Create, Load, Edit and Save crafting macros on the application.**
   - Macros files can be loaded directly by dragging them into the macro text area.
+- **Can be configured to perform trial synthesis easily.**
 - **Undo and redo edits in the macring area using crtl-Z and ctrl-Y.**
 - **Highlights the action queued to be executed during crafting.**
 
@@ -172,14 +171,14 @@ Setting the language that the FFXIV client is on will ensure that the correct ac
 The "Use Byregot's Brow" option was also added, which enables the replacement of any "Byregot's Blessing" action by the "Byregot's Brow" action when the number of current Inner Quiet stacks is at 5 or lower. Keep in mind that the success rate of "Byregot's Brow" is only 70% on non-specialist craft jobs.
 
 The configuration window was also updated to include four new position/areas:
- - The accept collectable synthesis button position.
+ - ~~The accept collectable synthesis button position.~~ Has been replaced by the trial synthesis button position.
  - The area where the materials for the craft are selected.
  - The area where the current crafting progress value is shown.
  - The area where the current crafting quality value is shown.
  
 <img src=new_config.png />
 
-The image above shows the new configuration settings. The collect button position is configured the same way the begin synthesis button position is configured, you just need to finish a collectable and find the screen position where the button to accept the collectable appears.
+The image above shows the new configuration settings. The collect button position has been replaced in the most recent version of the application to allow the trial synthesis button position to be configured, allowing the application to perform trial synthesis more easily.
 
 The Progress Value Area and Quality Value Area are configured the using a box similarly to the Quality detection text area. You just have to configure the Progress Value Area (1) and Quality Value Area (2) with the boxes shown below:
 
