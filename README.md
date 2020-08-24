@@ -366,7 +366,7 @@ The application then returns to the start of the macro to restart the process if
 ## Purchase and Updates
 You can purchase the application for 2.99€ using PayPal. A download link will be sent via email automatically upon payment by FetchApp. Any bugfixes before the next major version will also be distributed for free via email.
 
-<a href="http://atbcrafter.fetchapp.com/sell/dc75daf1"><img src="http://www.paypal.com/en_US/i/btn/btn_buynow_LG.gif" alt="" /></a>
+<a href="http://atbcrafter.fetchapp.com/sell/dc75daf1"><img src="http://www.paypal.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now" /></a>
 
 If you have already bought the application or obtained the application from someone else and want to contribute further for its development, you can always donate. Any amount of money helps and is appreciated.
 
