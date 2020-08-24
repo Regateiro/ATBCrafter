@@ -259,13 +259,6 @@ If an N limit to the number of tricks is added (e.g. -trick:3), then the "Tricks
 
 Makes the application click on the Begin Synthesis button as soon as it appears. The button should be visible when the application starts executing.
 
-### Finishing a collectable craft.
-`Usage:` /collect \<time\>
-
-`Example:` /collect 2000
-
-Makes the application click on the configured accept collectable button after <time> has elapsed. Since for now it is necessary to wait a set amount of time, finishing a collectable could fail on a big lag spike. A generous <time> setting is recommended if lag spikes are frequent.
-
 ### Configuring the quality detection.
 `Usage:` /qualityConfig
 
