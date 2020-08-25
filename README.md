@@ -267,11 +267,11 @@ Makes the application click on the Begin Synthesis button as soon as it appears.
 Starts an infinite loop of '/ac "Observe"' command executions. Only needs to be executed until all four different crafting qualities occurr within the same synthesis, after which the user will be prompted to map each saved image to a crafting quality.
 
 ### Crafting quality action branching.
-`Usage:` /ifquality (poor|normal|good|excellent)
+`Usage:` /ifquality (poor|normal|good|excellent|good+)
 
 `Example:` /ifquality excellent
 
-Checks if crafting quality matches the specified quality and any following commands are only executed if there is a quality match.
+Checks if crafting quality matches the specified quality and any following commands are only executed if there is a quality match. The "good+" option matches both the good and excellent quality conditions.
 
 Nested action branching commands are supported.
 
