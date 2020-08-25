@@ -171,14 +171,14 @@ Setting the language that the FFXIV client is on will ensure that the correct ac
 The "Use Byregot's Brow" option was also added, which enables the replacement of any "Byregot's Blessing" action by the "Byregot's Brow" action when the number of current Inner Quiet stacks is at 5 or lower. Keep in mind that the success rate of "Byregot's Brow" is only 70% on non-specialist craft jobs.
 
 The configuration window was also updated to include four new position/areas:
- - ~~The accept collectable synthesis button position.~~ Has been replaced by the trial synthesis button position.
+ - The position of the trial synthesis button.
  - The area where the materials for the craft are selected.
  - The area where the current crafting progress value is shown.
  - The area where the current crafting quality value is shown.
  
 <img src=new_config.png />
 
-The image above shows the new configuration settings. The collect button position has been replaced in the most recent version of the application to allow the trial synthesis button position to be configured, allowing the application to perform trial synthesis more easily.
+The image above shows the new configuration settings. The trial synthesis button position cam now be configured similarly to the Begin Synthesis button, allowing the application to perform trial synthesis more easily.
 
 The Progress Value Area and Quality Value Area are configured the using a box similarly to the Quality detection text area. You just have to configure the Progress Value Area (1) and Quality Value Area (2) with the boxes shown below:
 
