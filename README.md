@@ -257,7 +257,7 @@ If an N limit to the number of tricks is added (e.g. -trick:3), then the "Tricks
 
 `Example:` /craft
 
-Makes the application click on the Begin Synthesis button as soon as it appears. The button should be visible when the application starts executing.
+Makes the application click on the Begin Synthesis or Trial Synthesis button as soon as it appears. The button should be visible when the application starts executing.
 
 ### Configuring the quality detection.
 `Usage:` /qualityConfig
@@ -282,7 +282,7 @@ Requires a prior successful quality configuration.
 
 `Example:` /ifiq 6
 
-Checks if "Inner Quiet" is at N or more stacks and any following commands are only executed if true.
+Checks if "Inner Quiet" is at N or more stacks and any following commands are only executed if true. Note that the application only detects a successful Inner Quiet stack increase when the quality of the craft increases for some actions (like Hasty Touch). If quality is already at maximum it will not work properly.
 
 Nested action branching commands are supported.
 
@@ -307,9 +307,9 @@ Any command following this will be executed, regardless of the previous branchin
 
 `Example:` /else
 
-Following commands are only executed if the previous branching command did not get a quality match.
+Following commands are only executed if the previous branching command did not have a condition match.
 
-Should only be used between a branching and '/endif' commands.
+Should only be used between a branching '/if' and '/endif' commands.
 
 ## Macro Example
 To illustrate some of the commands shown above, the following macro will be used:
