@@ -168,7 +168,7 @@ In terms of features, the program now has an "Actions Localization" setting in t
 
 Setting the language that the FFXIV client is on will ensure that the correct action names will be used. **However, not all actions in all localizations were tested.** If there is an issue with any actions, please open the config.json file in the program's folder, find the action and correct its spelling if necessary. You can also add new actions if necessary come the next expansion and I'm slow to update the program.
 
-The "Use Byregot's Brow" option was also added, which enables the replacement of any "Byregot's Blessing" action by the "Byregot's Brow" action when the number of current Inner Quiet stacks is at 5 or lower. Keep in mind that the success rate of "Byregot's Brow" is only 70% on non-specialist craft jobs.
+~~The "Use Byregot's Brow" option was also added, which enables the replacement of any "Byregot's Blessing" action by the "Byregot's Brow" action when the number of current Inner Quiet stacks is at 5 or lower. Keep in mind that the success rate of "Byregot's Brow" is only 70% on non-specialist craft jobs.~~ Feature removed with the removal of "Byregot's Brow" from the game.
 
 The configuration window was also updated to include four new position/areas:
  - The position of the trial synthesis button.
