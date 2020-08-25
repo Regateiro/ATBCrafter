@@ -127,11 +127,11 @@ Finally, the "Synthesis quality text area" needs to be configured. Since this re
 
 <img src=config_3.png />
 
-First, place your mouse somewhere around the upper left corner of the area where the quality condition text appears (doesn't have to be precise, but **make sure that the mouse is within the crafting progress window**). Once again, take note of the mouse position as shown in the application and copy it to the first two fields as illustrated below.
+First, place your mouse somewhere around the upper left corner of the area where the quality condition text appears (doesn't have to be precise, but **make sure that the mouse is within the crafting progress window and that the circle to the left of the quality condition text is NOT in the area**). Once again, take note of the mouse position as shown in the application and copy it to the first two fields as illustrated below.
 
 <img src=config_4.png />
 
-Then, place your mouse somewhere around the lower right corner of the area where the quality condition text appears (once again, it doesn't have to be precise, but **make sure that the mouse is within the crafting progress window**). Take note once more of the mouse position as shown in the application and copy it to the final two fields as illustrated below.
+Then, place your mouse somewhere around the lower right corner of the area where the quality condition text appears (once again, it doesn't have to be precise, but **make sure that the mouse is within the crafting progress window and that the circle to the left of the quality condition text is NOT in the area**). Take note once more of the mouse position as shown in the application and copy it to the final two fields as illustrated below.
 
 <img src=config_5.png />
 
