@@ -92,7 +92,7 @@ The menu bar contains four different menus:
 
 <img src=macro.png />
 
-2. The execute menu, where the execution of the current opened macro can be started and stopped.
+2. The execute menu, where the execution of the current opened macro can be started and stopped. The option to start a trial synthesis has also been added.
 
 <img src=execute.png />
 
