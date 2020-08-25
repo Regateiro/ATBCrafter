@@ -121,7 +121,7 @@ Next, the "Action ready position" is configured in a very similar manner, as sho
 
 <img src=config_2.png />
 
-Locate an action in your hotbar that is always available to be used regardless of context (e.g. quality condition, current CP, etc.) such as "Basic Synthesis" or "Careful Synthesis". Place your mouse over the action and take note of the mouse position on the application. Copy the values into the respective fields.
+Locate an action in your hotbar that is always available to be used regardless of context (e.g. quality condition, current CP, etc.) such as "Basic Synthesis" or "Hasty Touch". Place your mouse over the action and take note of the mouse position on the application. Copy the values into the respective fields. **Note that with the recent changes to crafting "Careful Synthesis" is no longer a valid option for this purpose as it costs CP.**
 
 Finally, the "Synthesis quality text area" needs to be configured. Since this requires an area of the screen, two positions are needed (the upper left corner and the lower right corner of the area). The image below illustrates the two positions needed.
 
